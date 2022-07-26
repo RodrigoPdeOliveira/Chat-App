@@ -7,7 +7,10 @@ This project was created was created based on the project of this repo -> [APP-I
 
 # Instructions
 
-For the application to work completely you must start the application and the server.
+For the application to work completely you must install the dependencies and start the application / server.
+
+## Installing dependencies
+To install the application / server dependencies run `npm install` on each respective folder.
 
 ## Start the app
 
