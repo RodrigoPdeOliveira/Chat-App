@@ -1,0 +1,18 @@
+#message-wrapper {
+  background-color: lightcyan;
+  width: fit-content;
+}
+
+#message-wrapper > * {
+  width: fit-content;
+}
+
+#message-wrapper > p:nth-child(2), #message-wrapper > p:nth-child(3) {
+  text-indent: 30px;
+}
+
+#message-wrapper > p:nth-child(3) {
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 0;
+}

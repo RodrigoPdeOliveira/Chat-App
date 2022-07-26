@@ -1,0 +1,28 @@
+<div id="chat-wrapper" class="d-flex align-items-center container flex-column">
+  <div id="message-display" class="border rounded overflow-scroll">
+    <div *ngFor="let message of messageList">
+      <div id="message-wrapper" class="p-3 m-3 border rounded">
+        <h5>{{ message.username }}: </h5>
+        <p>{{ message.msg }}</p>
+        <p>Enviado: {{ message.sentAt }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="message-input" class="input-group my-3 w-75">
+    <button class="bi bi-emoji-laughing input-group-text"></button>
+
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Mensagem"
+      aria-label="Message"
+      aria-describedby="basic-addon1"
+      autofocus
+      [(ngModel)]="newMessage"
+      (keyup.enter)="sendMessage()"
+    />
+
+    <button class="bi bi-send input-group-text" type="submit" (click)="sendMessage()"></button>
+  </div>
+</div>
